@@ -1,0 +1,20 @@
+Classify the user's input into categories useful for PPT generation.
+
+Mode: {{ mode }}
+Prompt: {{ prompt }}
+Document content (if present): {{ document_content }}
+PPT text (if present): {{ ppt_text }}
+Web search enabled: {{ web_search }} (depth {{ web_depth }})
+YouTube summary: {{ youtube_summary }}
+Audience: {{ audience }}
+Tone: {{ tone }}
+Style: {{ style }}
+
+Return JSON only:
+{
+  "intent": "e.g., create_marketing_pitch, educational_overview, product_demo",
+  "topic_tags": ["tag1","tag2"],
+  "recommended_slide_count": 5,
+  "recommend_images": true,
+  "notes": "any special instructions"
+}

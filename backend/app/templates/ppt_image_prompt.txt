@@ -1,0 +1,9 @@
+Create a concise image prompt (1-2 sentences) for Stable Diffusion that matches:
+Style: {{ style }}
+Layout: {{ layout }}
+Audience: {{ audience }}
+Topic: {{ topic }}
+Image detail level: {{ image_level }}
+
+Instruction: produce a modern presentation illustration (not a photographic clutter), keep central area open for text overlay if needed.
+Return plain text only.

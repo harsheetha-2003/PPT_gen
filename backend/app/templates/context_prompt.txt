@@ -1,0 +1,24 @@
+You are an assistant that transforms a document into slide-ready content.
+
+Document:
+{{ document_content }}
+
+Preferences:
+Tone: {{ tone }}
+Style: {{ style }}
+Audience: {{ audience }}
+Layout: {{ layout }}
+Template: {{ template }}
+Additional instructions: {{ additional_instructions }}
+
+Return JSON only:
+{
+  "slides": [
+    {
+      "slide_number": 1,
+      "title": "...",
+      "content": ["...","..."],
+      "speaker_notes": "..."
+    }
+  ]
+}

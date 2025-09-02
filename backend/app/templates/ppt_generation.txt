@@ -1,0 +1,43 @@
+You are an expert presentation creator. Output VALID JSON only.
+
+Topic: {{ topic }}
+Number of slides: {{ slides }}
+Template style: {{ template }}
+Layout: {{ layout }}
+Images requested: {{ images }}
+Image level: {{ image_level }}
+Tone: {{ tone }}
+Style: {{ style }}
+Audience: {{ audience }}
+Additional instructions: {{ additional_instructions }}
+
+Document summary (if provided):
+{{ document_summary }}
+
+Web (DDG) summary (if provided):
+{{ ddg_summary }}
+
+YouTube summary (if provided):
+{{ youtube_summary }}
+
+For each slide produce:
+- slide_number (1..N)
+- title
+- content (array of 2-4 concise bullet points)
+- speaker_notes (optional)
+- image_prompt (optional: short prompt to generate an illustrative image)
+
+Return JSON like:
+{
+  "slides": [
+    {
+      "slide_number": 1,
+      "title":"Title",
+      "content":["point1","point2"],
+      "speaker_notes":"notes",
+      "image_prompt":"optional"
+    }
+  ]
+}
+
+Return VALID JSON ONLY.

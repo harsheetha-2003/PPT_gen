@@ -1,0 +1,13 @@
+Decide which flow should be used for this input.
+
+Prompt: {{ prompt }}
+Document present: {{ document_present }}
+PPT present: {{ ppt_present }}
+Additional instructions: {{ additional_instructions }}
+
+Return JSON only:
+{
+  "flow": "prompt_only | prompt_plus_document | enhance_ppt",
+  "reason": "short explanation",
+  "recommended_slides": 5
+}
